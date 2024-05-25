@@ -1,5 +1,84 @@
 * {
   margin: 0;
   box-sizing: border-box;
-  background-color: rgb(223, 223, 223);
-}
+  }
+ 
+ 
+ /*inventory page style */
+ 
+ 
+ .books-container{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+   /* align-items: flex-end; */
+  margin: 100px;
+  padding: 50px;
+  background-color: white;
+ }
+ 
+ 
+ .book-card {
+  border: 1px solid #ccc; /* Adds a subtle border around the card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a shadow for depth */
+  width: 300px; /* Sets a fixed width for the card */
+  margin: 20px; /* Adds space around the card */
+  padding: 15px; /* Adds space inside the card */
+  text-align: center; /* Aligns the text and content to the center */
+  border-radius: 8px; /* Rounds the corners of the card */
+  background-color:  #A9A9A9;
+ 
+ 
+ }
+ 
+ 
+ .book-card img {
+  width: 250px; /* Width of the image */
+  height: 400px; /* Height of the image */
+  object-fit: cover; /* Ensures the image covers the frame without distorting */
+  border-radius: 4px; /* Optional: rounds the corners of the image */
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ .book-card h3 {
+  color: #333; /* Dark grey color for the title */
+  font-size: 18px; /* Font size for the title */
+  margin-top: 10px; /* Space above the title */
+  background-color: #A9A9A9;
+  white-space: normal; /* Ensures that the text can wrap */
+  word-wrap: break-word; /* Breaks the words at the end of the line to the next line if needed */
+  overflow-wrap: break-word; /* Allows unbreakable words to be broken */
+  text-align: left;
+ }
+ 
+ 
+ .book-card p {
+  color: #666; /* Medium grey color for the author text */
+  font-size: 16px; /* Slightly smaller font size for the author */
+  background-color: #A9A9A9;
+  text-align: left;
+ }
+ 
+ 
+ .book-card button {
+  background-color:#612626; /* A nice shade of blue for the button */
+  color: white; /* White text on the button */
+  border: none; /* No border for a cleaner look */
+  padding: 10px 20px; /* Padding inside the button */
+  margin-top: 10px; /* Space above the button */
+  cursor: pointer; /* Changes the cursor on hover to indicate it's clickable */
+  border-radius: 10px; /* Rounds the corners of the button */
+  transition: background-color 0.3s; /* Smooth transition for the button color */
+ }
+ 
+ 
+ .book-card button:hover {
+  background-color: #800000; /* Darker blue when hovering over the button */
+ }
+ 
+ 
+ 
