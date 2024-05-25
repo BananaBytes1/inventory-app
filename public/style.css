@@ -1,7 +1,78 @@
 * {
   margin: 0;
   box-sizing: border-box;
-  }
+}
+
+
+/* HOMEPAGE STYLING */
+.homepage-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.logo-container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 900px;
+}
+
+.logo {
+  width: 20em;
+  height: auto;
+}
+
+.homepageImg-container {
+  position: relative;
+  width: 97%;
+  height: calc(100vh - 200px);
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.85;
+}
+
+.text-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text-container h1 {
+  font-size: 70px;
+  margin-bottom: 20px;
+  color: #612626;
+}
+
+.text-container h2 {
+  font-size: 50px;
+  margin-bottom: 10px;
+  color: #612626;
+}
+
+.text-container button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #d9d9d9;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.text-container button:hover {
+  background-color: #612626;
+  color: #d9d9d9;
+}
+
+/* END HOMEPAGE STYLING */
  
  
  /*inventory page style */
@@ -77,7 +148,4 @@
  
  .book-card button:hover {
   background-color: #800000; 
- }
- 
- 
- 
+}
