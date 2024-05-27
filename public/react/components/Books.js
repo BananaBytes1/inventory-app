@@ -45,25 +45,21 @@ function Books() {
   
   return (
     <>
-      <BooksNavBar />
-    <div className="books-container">
-      <h1>Books</h1>
-      <div className="search-container">
-          <input
-            type="text"
-            value={searchQuery}
-            onChange={handleSearchChange}
-            placeholder="Search"
-          />
-        </div>
-
+      <BooksNavBar 
+       searchQuery={searchQuery}
+       handleSearchChange={handleSearchChange}
+       />
+    <div className="books-heading">
+      <h1 className="">Books</h1>
       <Link to="/new-book">
-          <button>Add a Book</button>
+          <button id="addBookBtn">Add a Book</button>
       </Link>
-      {filteredBooks.map((book, idx) => {
-        return <BookCard key={idx} bookInfo={book} />
-      })}
     </div>
+      <div className="books-container">
+        {filteredBooks.map((book, idx) => {
+          return <BookCard key={idx} bookInfo={book} />
+        })}
+      </div>
     </>
   )
 } 

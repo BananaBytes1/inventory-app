@@ -1,3 +1,7 @@
+:root {
+  --secondary-color: #A14B22;
+}
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -82,8 +86,8 @@
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  margin: 100px;
-  padding: 50px;
+  margin-left: 10em;
+  padding: 10px;
   background-color: white;
  }
  
@@ -96,7 +100,7 @@
   padding: 15px; /* Adds space inside the card */
   text-align: center; /* Aligns the text and content to the center */
   border-radius: 8px; /* Rounds the corners of the card */
-  background-color:  #A9A9A9;
+  background-color:  var(--secondary-color);
  
  
  }
@@ -115,10 +119,10 @@
  
  
  .book-card h3 {
-  color: #333; 
+  color: whitesmoke; 
   font-size: 18px; /* Font size for the title */
   margin-top: 10px; /* Space above the title */
-  background-color: #A9A9A9;
+  background-color: var(--secondary-color);
   white-space: normal; /* Ensures that the text can wrap */
   word-wrap: break-word; /* Breaks the words at the end of the line to the next line if needed */
   overflow-wrap: break-word; /* Allows unbreakable words to be broken */
@@ -127,14 +131,14 @@
  
  
  .book-card p {
-  color: #666; 
+  color: whitesmoke; 
   font-size: 16px; /* Slightly smaller font size for the author */
-  background-color: #A9A9A9;
+  background-color: var(--secondary-color);
   text-align: left;
  }
  
  
- .book-card button {
+ .book-card button, #addBookBtn {
   background-color:#612626; 
   color: white; /* White text on the button */
   border: none; 
@@ -146,6 +150,57 @@
  }
  
  
- .book-card button:hover {
+ .book-card button:hover, #addBookBtn {
   background-color: #800000; 
+}
+
+/* nav bar styling */
+.nav-bar{
+  background-color: #D4AA4C;
+  margin: 0px;
+  border: 0px;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#nav-a {
+  color: white;
+  text-decoration: none; 
+}
+
+#nav-a:hover {
+  color: #800000; 
+}
+
+#nav-a:active {
+  color: var(--secondary-color); 
+}
+
+.nav-bar > .nav-left {
+  flex: 1  1 1%;
+}
+
+.nav-bar > .nav-main {
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: space-around;
+  font-family: 'Courier New', Courier, monospace;
+  color: red;
+  font-size: 1rem;
+}
+
+.nav-bar > .nav-right {
+  border-left: 100px;
+  flex: 1 1 1%;
+}
+
+#navBar-logo {
+  height: 20%;
+  width: 20%;
+}
+
+.books-heading{
+  margin-left: 2em;
+  margin-top: 2em;
 }
