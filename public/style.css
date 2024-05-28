@@ -20,58 +20,21 @@
 /* HOMEPAGE STYLING */
 .homepage-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-.logo-container {
+  display: block;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: -1; /* Pushes the logo behind other elements */
 }
 
-.logo {
-  width: 1000px; /* Adjust the width as needed */
+.homepage-container img {
   height: auto;
+  width: 400px;
+  object-fit: cover; /* Ensures the image covers the frame without distorting */
+  float: top;
 }
 
-.homepageImg-container {
-  position: relative;
-  width: 97%;
-  height: calc(100vh - 200px);
-}
-
-.background {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0.85;
-}
-
-.text-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.text-container h1 {
-  font-size: 70px;
-  margin-bottom: 20px;
-  color: #612626;
-}
-
-.text-container h2 {
-  font-size: 50px;
-  margin-bottom: 10px;
-  color: #612626;
-}
-
-.text-container button {
+.homepage-container button {
   padding: 10px 20px;
   font-size: 16px;
   background-color: #D4AA4C;
@@ -80,19 +43,17 @@
   border-radius: 20px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  margin-left: 30%;
+  margin-top: 3%;
 }
 
-.text-container button:hover {
+.homepage-container button:hover {
   background-color: var(--secondary-color);
-  color: #d9d9d9;
+  color: #D9D9D9;
 }
-
 /* END HOMEPAGE STYLING */
- 
- 
+
  /*inventory page style */
- 
- 
  .books-container{
   display: flex;
   justify-content: flex-start;
@@ -101,30 +62,27 @@
   padding: 10px;
   background-color: white;
  }
- 
- 
+
  .book-card {
   border: 1px solid #ccc; /* Adds a subtle border around the card */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a shadow for depth */
-  width: 300px; 
+  width: 300px;
   margin: 20px; /* Adds space around the card */
   padding: 15px; /* Adds space inside the card */
   text-align: center; /* Aligns the text and content to the center */
   border-radius: 8px; /* Rounds the corners of the card */
   background-color:  var(--secondary-color);
  }
- 
- 
+
  .book-card img {
-  width: 250px; 
-  height: 400px; 
+  width: 250px;
+  height: 400px;
   object-fit: cover; /* Ensures the image covers the frame without distorting */
   border-radius: 4px; /* rounds the corners of the image */
  }
- 
 
  .book-card h3 {
-  color: whitesmoke; 
+  color: whitesmoke;
   font-size: 18px; /* Font size for the title */
   margin-top: 10px; /* Space above the title */
   background-color: var(--secondary-color);
@@ -133,30 +91,27 @@
   overflow-wrap: break-word; /* Allows unbreakable words to be broken */
   text-align: left;
  }
- 
- 
+
  .book-card p {
-  color: whitesmoke; 
+  color: whitesmoke;
   font-size: 16px; /* Slightly smaller font size for the author */
   background-color: var(--secondary-color);
   text-align: left;
  }
- 
- 
+
  .book-card button, #addBookBtn {
-  background-color:#612626; 
+  background-color:#612626;
   color: white; /* White text on the button */
-  border: none; 
+  border: none;
   padding: 10px 20px; /* Padding inside the button */
   margin-top: 10px; /* Space above the button */
   cursor: pointer; /* Changes the cursor on hover */
   border-radius: 10px; /* Rounds the corners of the button */
   transition: background-color 0.3s; /*transition for the button color */
  }
- 
- 
+
  .book-card button:hover, #addBookBtn {
-  background-color: #800000; 
+  background-color: #800000;
 }
 
 /* nav bar styling */
@@ -171,15 +126,15 @@
 
 #nav-a {
   color: white;
-  text-decoration: none; 
+  text-decoration: none;
 }
 
 #nav-a:hover {
-  color: #800000; 
+  color: #800000;
 }
 
 #nav-a:active {
-  color: var(--secondary-color); 
+  color: var(--secondary-color);
 }
 
 .nav-bar > .nav-left {
@@ -204,10 +159,7 @@
   height: 20%;
   width: 20%;
 }
-
-
 /* Ends nav-bar styling */
-
 
 /* Edit book styling */
 .edit-book-container, .book-details-container, .add-book-container {
@@ -217,7 +169,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); 
+  transform: translate(-50%, -50%);
   color:white;
   border: 1px solid #ccc; /* Adds a subtle border around the card */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a shadow for depth */
@@ -230,7 +182,6 @@
 .edit-book-information label, .add-book-information label {
   display:block;
   display: flex;
-  
 }
 
 .edit-book-information input, .add-book-information input {
@@ -240,24 +191,23 @@
 }
 
 .edit-book-container button, .book-details-container button, .add-book-container button {
-  background-color:#612626; 
+  background-color:#612626;
   color: white; /* White text on the button */
-  border: none; 
+  border: none;
   padding: 10px 20px; /* Padding inside the button */
   margin-top: 10px; /* Space above the button */
   cursor: pointer; /* Changes the cursor on hover */
   border-radius: 10px; /* Rounds the corners of the button */
   transition: background-color 0.3s; /*transition for the button color */
-  
  }
- 
+
  .edit-book-container button:hover, .book-details-container button:hover, .add-book-container button:hover {
-  background-color: #800000; 
+  background-color: #800000;
  }
 
  .edit-book-container img, .book-details-container img, .add-book-container img {
-  width: 403px; 
-  height: 588px; 
+  width: 403px;
+  height: 588px;
   object-fit: cover; /* Ensures the image covers the frame without distorting */
   border-radius: 4px; /* rounds the corners of the image */
   float: left;
