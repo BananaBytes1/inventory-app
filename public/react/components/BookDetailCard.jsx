@@ -15,20 +15,22 @@ function BookDetailCard(props) {
 
     return (
         <>
-            <div className="book-card">
+            <div className="book-details-container">
                 <img src={imageUrl} />
+                <div className='book-details-information'>
                 <h3>{title}</h3>
-                <p>{author}</p>
-                <p>{description}</p>
-                <p>{price}</p>
-                <p>{quantity}</p>
-                <p>{genre}</p>
+                <p>Author: {author}</p>
+                <p>Description: {description}</p>
+                <p>Price: {price}</p>
+                <p>Quantity in stock: {quantity}</p>
+                <p>Genre: {genre}</p>
                 <Link to={`/books`}>
                     <button onClick={handleDelete}>Delete</button>
                 </Link>
                 <Link to={`/edit-book/${id}`}>
                     <button>Edit</button>
                 </Link>
+                </div>
         </div>
         </>
     )

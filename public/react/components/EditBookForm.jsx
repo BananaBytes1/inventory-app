@@ -63,7 +63,7 @@ function EditBookForm() {
                 setDescription(bookDetails.description)
                 setGenre(bookDetails.genre)
                 setQuantity(bookDetails.quantity)
-                
+                setImageUrl(bookDetails.imageUrl)
                 
                 
             } catch (error) {
@@ -80,8 +80,11 @@ function EditBookForm() {
     return(
         <>
             <BookDetailsNavBar />
-            <h1>Create book form</h1>
-            <h3>{(submitted) ? message : ""}</h3>
+            <div className="edit-book-container">
+            <img src={imageUrl} />
+                <div className="edit-book-information">
+                  <h1>Edit book</h1>  
+                <h3>{(submitted) ? message : ""}</h3> 
             <form onSubmit={handleSubmit}>
                 <label>
                     Title:
@@ -144,7 +147,7 @@ function EditBookForm() {
                     />
                 </label>
                 <label>
-                    Image URL:
+                    ImageURL:
                     <input
                         type="url"
                         value={imageUrl}
@@ -154,12 +157,11 @@ function EditBookForm() {
                 </label>
                 
                 <button type="submit">Save</button>
-                <Link to='/books'><button>Go back to main</button></Link>
+                <Link to='/books'><button>Cancel</button></Link>
                 
-                    
-                
-                
-            </form>
+                        </form>
+                    </div>
+                    </div>
         </>
     )
 }
