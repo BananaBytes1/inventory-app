@@ -27,13 +27,14 @@
 
 .logo-container {
   position: absolute;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
-  margin-bottom: 900px;
+  transform: translate(-50%, -50%);
+  z-index: -1; /* Pushes the logo behind other elements */
 }
 
 .logo {
-  width: 20em;
+  width: 1000px; /* Adjust the width as needed */
   height: auto;
 }
 
@@ -73,7 +74,8 @@
 .text-container button {
   padding: 10px 20px;
   font-size: 16px;
-  background-color: #d9d9d9;
+  background-color: #D4AA4C;
+  color: white;
   border: none;
   border-radius: 20px;
   cursor: pointer;
@@ -81,7 +83,7 @@
 }
 
 .text-container button:hover {
-  background-color: #612626;
+  background-color: var(--secondary-color);
   color: #d9d9d9;
 }
 
@@ -110,8 +112,6 @@
   text-align: center; /* Aligns the text and content to the center */
   border-radius: 8px; /* Rounds the corners of the card */
   background-color:  var(--secondary-color);
- 
- 
  }
  
  
@@ -123,10 +123,6 @@
  }
  
 
- 
- 
- 
- 
  .book-card h3 {
   color: whitesmoke; 
   font-size: 18px; /* Font size for the title */
