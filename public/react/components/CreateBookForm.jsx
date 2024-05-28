@@ -47,10 +47,13 @@ function CreateBookForm() {
     return(
         <>
             <BookDetailsNavBar />
+            <div className="section-name">
+      <h1></h1>
+    </div>
             <div className='add-book-container'>
                 <img src={imageUrl} />
                 <div className='add-book-information'>
-                <h1>Add book</h1>    
+                <h1>Add Book</h1>    
             <h3>{(submitted) ? message : ""}</h3>
             <form onSubmit={handleSubmit}>
                 <label>

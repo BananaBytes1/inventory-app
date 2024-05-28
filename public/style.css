@@ -7,6 +7,15 @@
   box-sizing: border-box;
 }
 
+.section-name{
+  text-align: center;
+  background-color: #A14B22;
+  height: 45px;
+}
+
+.section-name h1{
+  color:white;
+}
 
 /* HOMEPAGE STYLING */
 .homepage-container {
@@ -113,7 +122,7 @@
   border-radius: 4px; /* rounds the corners of the image */
  }
  
- 
+
  
  
  
@@ -200,10 +209,6 @@
   width: 20%;
 }
 
-.books-heading{
-  margin-left: 2em;
-  margin-top: 2em;
-}
 
 /* Ends nav-bar styling */
 

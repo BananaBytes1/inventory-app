@@ -80,6 +80,9 @@ function EditBookForm() {
     return(
         <>
             <BookDetailsNavBar />
+            <div className="section-name">
+      <h1 className=""></h1>
+    </div>
             <div className="edit-book-container">
             <img src={imageUrl} />
                 <div className="edit-book-information">

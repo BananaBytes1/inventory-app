@@ -14,7 +14,10 @@ function BookDetailCard(props) {
       };
 
     return (
-        <>
+      <>
+        <div className="section-name">
+      <h1 className=""></h1>
+    </div>
             <div className="book-details-container">
                 <img src={imageUrl} />
                 <div className='book-details-information'>
