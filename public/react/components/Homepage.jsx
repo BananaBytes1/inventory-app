@@ -9,7 +9,6 @@ function HomePage() {
               <img src={Logo} alt= "Logo" className= "logo" />
             </div>
             <div className="homepageImg-container">
-            <img src={Background} className= "background"/>
             <div className="text-container">
                 <h2>Ink & Pages</h2>
                 <h1>Bookstore</h1>
