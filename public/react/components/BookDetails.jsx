@@ -26,10 +26,7 @@ function BookDetails() {
     return (
         <>
             <BookDetailsNavBar />
-        <div className="books-container">
-        <h1>Book Details</h1>
         <BookDetailCard bookInfo={book} />
-      </div>
       </>
     )
   } 

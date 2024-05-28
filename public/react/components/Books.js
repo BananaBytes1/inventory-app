@@ -49,11 +49,8 @@ function Books() {
        searchQuery={searchQuery}
        handleSearchChange={handleSearchChange}
        />
-    <div className="books-heading">
-      <h1 className="">Books</h1>
-      <Link to="/new-book">
-          <button id="addBookBtn">Add a Book</button>
-      </Link>
+    <div className="section-name">
+      <h1 className="">Books in stock</h1>
     </div>
       <div className="books-container">
         {filteredBooks.map((book, idx) => {

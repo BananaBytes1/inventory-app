@@ -7,6 +7,15 @@
   box-sizing: border-box;
 }
 
+.section-name{
+  text-align: center;
+  background-color: #A14B22;
+  height: 45px;
+}
+
+.section-name h1{
+  color:white;
+}
 
 /* HOMEPAGE STYLING */
 .homepage-container {
@@ -113,7 +122,7 @@
   border-radius: 4px; /* rounds the corners of the image */
  }
  
- 
+
  
  
  
@@ -200,7 +209,78 @@
   width: 20%;
 }
 
-.books-heading{
-  margin-left: 2em;
-  margin-top: 2em;
+
+/* Ends nav-bar styling */
+
+
+/* Edit book styling */
+.edit-book-container, .book-details-container, .add-book-container {
+  height: 623px;
+  width: 975px;
+  line-height: 2.5;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  color:white;
+  border: 1px solid #ccc; /* Adds a subtle border around the card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a shadow for depth */
+  margin: 20px; /* Adds space around the card */
+  padding: 15px; /* Adds space inside the card */
+  border-radius: 8px; /* Rounds the corners of the card */
+  background-color:  var(--secondary-color);
 }
+
+.edit-book-information label, .add-book-information label {
+  display:block;
+  display: flex;
+  
+}
+
+.edit-book-information input, .add-book-information input {
+  margin-left: 2%;
+  width: 100%;
+  height: 25px;
+}
+
+.edit-book-container button, .book-details-container button, .add-book-container button {
+  background-color:#612626; 
+  color: white; /* White text on the button */
+  border: none; 
+  padding: 10px 20px; /* Padding inside the button */
+  margin-top: 10px; /* Space above the button */
+  cursor: pointer; /* Changes the cursor on hover */
+  border-radius: 10px; /* Rounds the corners of the button */
+  transition: background-color 0.3s; /*transition for the button color */
+  
+ }
+ 
+ .edit-book-container button:hover, .book-details-container button:hover, .add-book-container button:hover {
+  background-color: #800000; 
+ }
+
+ .edit-book-container img, .book-details-container img, .add-book-container img {
+  width: 403px; 
+  height: 588px; 
+  object-fit: cover; /* Ensures the image covers the frame without distorting */
+  border-radius: 4px; /* rounds the corners of the image */
+  float: left;
+ }
+
+ .edit-book-information, .add-book-information {
+  display: inline-block;
+  position: absolute;
+  margin-left: 8%;
+  margin-top: 8%;
+  width: 420px;
+ }
+
+ .book-details-information {
+  display: inline-block;
+  position: absolute;
+  margin-left: 8%;
+  margin-top: 15%;
+  width: 420px;
+ }
+
+/* ENDS BOOK DETAILS STYLING */

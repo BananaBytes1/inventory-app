@@ -47,7 +47,13 @@ function CreateBookForm() {
     return(
         <>
             <BookDetailsNavBar />
-            <h1>Create book form</h1>
+            <div className="section-name">
+      <h1></h1>
+    </div>
+            <div className='add-book-container'>
+                <img src={imageUrl} />
+                <div className='add-book-information'>
+                <h1>Add Book</h1>    
             <h3>{(submitted) ? message : ""}</h3>
             <form onSubmit={handleSubmit}>
                 <label>
@@ -111,7 +117,7 @@ function CreateBookForm() {
                     />
                 </label>
                 <label>
-                    Image URL:
+                    ImageURL:
                     <input
                         type="url"
                         value={imageUrl}
@@ -120,12 +126,14 @@ function CreateBookForm() {
                     />
                 </label>
                 
-                <button type="submit">Add New Book</button>
-                <Link to='/books'><botton>Back to main</botton></Link>
+                <button type="submit">Add</button>
+                <Link to='/books'><button>Cancel</button></Link>
                     
                 
                 
-            </form>
+                </form>
+                </div>
+                </div>
         </>
     )
 }

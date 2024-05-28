@@ -15,12 +15,6 @@ function BooksDetailsNavBar({ searchQuery, handleSearchChange }) {
                 </div>
 
                 <div className="nav-right">
-                <input
-                 type="text"
-                 value={searchQuery}
-                 onChange={handleSearchChange}
-                 placeholder="Search"
-                 />
                 </div>
             </div>
         </>
